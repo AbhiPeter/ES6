@@ -1,0 +1,51 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <pre>creata a Person class and student class student should inherit from person and can access method fullname
+
+<script>
+
+class Person{
+    constructor(firstName,lastName)
+    {
+        this.firstName=firstName;
+        this.lastName=lastName;
+    }
+    getFullName()
+
+    {
+        return "Full name is given As :- " +this.firstName + ' ' +this.lastName;
+    }
+}
+
+class Student extends Person
+{
+    constructor(firstName,lastName)
+    {
+        //with use of super keyword we can access the base class property:-
+        
+        super(firstName,lastName);
+
+        
+    }
+}
+
+var studentInfo=new Student("Peter","Parker");
+
+//here now we are priting the Full Name from base class method:-
+
+console.log(studentInfo.getFullName());
+
+</script>
+</body>
+
+</html>

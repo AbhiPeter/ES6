@@ -1,0 +1,63 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <pre> creat a person class and add function calcualte salary and get fullname?
+</body>
+
+<script>
+
+
+///first way i have created by using same class name:-
+
+class Person
+{
+    constructor(firstName,lastName,basicsal,hra,tds)
+    {
+        this.firstName=firstName;
+        this.lastName=lastName;
+         this.basicsal=basicsal;
+        this.hra=hra;
+        this.tds=tds;
+
+       
+    }
+
+    getfullName()
+    {
+        return 'Full Name is Given As ' + this.firstName + ' ' + this.lastName;
+    }
+
+    getSalary()
+
+    {
+        console.log("the Salary is given as : ");
+        return this.basicsal+this.hra+this.tds;
+    }
+}
+
+
+let personFullname=new Person("Peter","Parker");
+let employeeSalary=new Person("","",25000,2000,3000);
+
+//priting the full name is given here :-
+
+console.log(personFullname.getfullName());
+
+//printing the salary for employee is given here
+
+console.log(employeeSalary.getSalary());
+
+
+</script>
+
+</html>
