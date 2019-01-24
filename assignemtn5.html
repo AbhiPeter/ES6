@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <pre>
+1)what is differnce between let and Var?
+
+-let and var are used for function decalration or variable decalrtion.
+-var is function scope while let is block scoped.
+-variable decalred with var is defined throughout the prorgam as compared to let.
+-Hoisting is not applied for let where hoisting can be done for var.
+    console.log(x);
+    var x=3;
+
+    here variable hoisiting is applied for the var decalration on other hand, let does not support variable hoisiting
+    
+-let is the block scope where var is fucntion scope which will see in below exmaple:-
+
+let a=20
+{
+    let a =30;
+    //this a willbe scoped in this block only and cannot be accesed outside the block
+}
+where as:
+
+var a=30;
+{
+    var a=60;
+}
+
+here the output will be 60 as var decalation is function scope.
+
+-variable decalred inside the fucntion have a function scope for both let and var:
+    function add()
+    {
+        var firstName="peter";
+    }
+
+    function add()
+    {
+        let firstName="parker";
+
+    }
+
+-variable decalred with var cannot have the block scope:
+
+{
+    var a=20;
+}
+//here a will be accessable
+
+where as let are block scope :
+
+{
+    let a=30;
+}
+
+//a cannot be accesed here
+
+-before es6 javascript did not have the block scope varible declared with let keyword can have the block scope
+
+-gloabl scope :-variabel decalred outside the function for both let and var will have the global scope
+
+-redeclaring var is allowed but when with let on same block is not allowed
+
+    var a=20 //allowed
+    var a=30//allowed
+
+let a=45 //allowed
+let a=34 //not alowed as we are chaning the value on same block scope
+
+
+
+</pre>
+</body>
+
+</html>

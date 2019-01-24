@@ -1,33 +1,45 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>assignment 6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body>
+    <pre>
+1)what is block scoping?
 
-    <pre>var items=["test1",test2,test3,test5],please sshow test 5 using destructing
+- block level scoping cane be done with ES6 as previous there was no block level scope.
 
-<script>
+-block level scoping can be achived by using let keyword.
 
-//array destructing :-
+-block level scope will be accesible within block only
 
-var items=["test1","test2","Test5"];
+{
+    let a=37
 
-//destruing for an array is given here
+    here a will be accesible within block only
+}
 
-var [,,three] = items;
+//here a cannot be accesed.
 
-console.log(three);
+-using var keyword it was function scope so the variable was accesible outside the block.
+
+        {
+            var a=30;
+        }
+
+        //here a is accesible as this is function scope 
+
+-variable declared with let inside the block are only accesible inside that scope.
+
+-also you can acshive same by using const as const and let are same in scoping but we cannot change the value of constant references
 
 
-</script>
+</pre>
 </body>
-
 
 </html>

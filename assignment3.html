@@ -1,4 +1,4 @@
-<!doctype <!DOCTYPE html>
+<!Doctype <!DOCTYPE html>
 <html>
 
 <head>
@@ -11,53 +11,35 @@
 
 <body>
 
-    <pre> creat a person class and add function calcualte salary and get fullname?
-</body>
+    <pre> 
+    1)create person and student class using inhertinace:-
 
-<script>
+   class Person { 
+    constructor(firstName: string, lastName: string) { 
+        this.firstName = firstName;
+        this.lastName = lastName;
 
-
-///first way i have created by using same class name:-
-
-class Person
-{
-    constructor(firstName,lastName,basicsal,hra,tds)
-    {
-        this.firstName=firstName;
-        this.lastName=lastName;
-         this.basicsal=basicsal;
-        this.hra=hra;
-        this.tds=tds;
-
-       
     }
-
-    getfullName()
-    {
-        return 'Full Name is Given As ' + this.firstName + ' ' + this.lastName;
-    }
-
-    getSalary()
-
-    {
-        console.log("the Salary is given as : ");
-        return this.basicsal+this.hra+this.tds;
+    getFullName() { 
+        return this.firstName + ' ' + this.lastName;
     }
 }
 
+//here class student is the child class for person base class:-
 
-let personFullname=new Person("Peter","Parker");
-let employeeSalary=new Person("","",25000,2000,3000);
+class Student extends Person { 
+    constructor(firstName: string, lastName: string) { 
+        super(firstName, lastName);
 
-//priting the full name is given here :-
+    }
+}
 
-console.log(personFullname.getfullName());
+let studentFullName = new Person("peter", "parker");
 
-//printing the salary for employee is given here
-
-console.log(employeeSalary.getSalary());
+console.log(studentFullName.getFullName());
 
 
-</script>
+</pre>
+</body>
 
 </html>

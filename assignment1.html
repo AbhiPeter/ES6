@@ -7,29 +7,42 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
+</head>
 
-        <body>
-            <pre>
-            1)how we can creat a class in Es6?
+<body>
+    <pre>
 
-            -Class in term of OOP is a blue print for creating the objects.
-            -a class encapsulates data for object.
+1)create the typescript class create person class add method and properties
 
-        syntax for class in Es6:-
-        class Classname{} 
+-here typescript we can create class by using the class Classname;
+-below is the example for class and their methods and properties.
+-also the typescript code need to be saved in .ts file
 
-            example for creating person class in Es6  is given as:-
+code for class and methods in typescript:-
 
-            class Person{
-                constructor()
-                {
-                    
-                }         
-            }
+class Person { 
+    firstName: string;
+    lastName: string;
+    constructor(firstName, lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    };
 
-       </pre>
+    getFullName() { 
+        return 'the name is given as ' + this.firstName + ' ' + this.lastName;
 
-        </body>
+    };
+
+    
+};
+
+let personFullName = new Person("peter", "parker");
+
+console.log(personFullName.getFullName());
+
+    
+</pre>
+</body>
 
 </html>
